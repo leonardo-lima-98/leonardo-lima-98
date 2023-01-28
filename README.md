@@ -1,16 +1,21 @@
 ### Hi there 👋
 
-<!--
-**leonardo-lima-98/leonardo-lima-98** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- 🔭 Atualmente estou trabalhando na InterOp como Analista de monitoramento (NOC)
+- 🌱 Atualmente estou aprendendo tudo sobre liguagens de programação, DB's, Engenharia de Software e lendo bastante sobre Softskills
+- 👯 Estou procurando colaborar em desenvolvimento de aplicações com Python e futuramente com Java 
+- 🤔 Estou procurando ajuda desde que nasci, então qualquer conselho é bem-vindo
+- 💬 Pergunte-me sobre qualquer filosofia desde a mais sofisticada até a mais desconexa
+- 📫 Como chegar até mim: [Linkedin](https://www.linkedin.com/in/leonardo-delima/)
+- 😄 Pronomes: Léo Lima
+- ⚡ Curiosidade: Eu consigo fazer a saudação Vulcana :vulcan_salute:
 
-Here are some ideas to get you started:
+In English
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🔭 I am currently working at InterOp as a Monitoring Analyst (NOC)
+- 🌱 I'm currently learning everything about programming languages, DB's, Software Engineering and reading a lot about Softskills
+- 👯 I'm looking to collaborate on application development with Python and in the future with Java
+- 🤔 I've been looking for help since I was born, so any advice is welcome
+- 💬 Ask me about any philosophy from the most sophisticated to the most disjointed
+- 📫 How to reach me: [Linkedin](https://www.linkedin.com/in/leonardo-delima/)
+- 😄 Pronouns: Leo Lima
+- ⚡ Fun fact: I can do the Vulcan salute :vulcan_salute:

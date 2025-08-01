@@ -1,0 +1,39 @@
+name: Update README with Last Updated Repo
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Fetch most recently updated repo and update README
+        run: |
+          REPO_JSON=$(curl -s "https://api.github.com/users/leonardo-lima-98/repos?sort=updated")
+          LAST_UPDATED_REPO_NAME=$(echo "$REPO_JSON" | jq -r '.[0].name')
+          LAST_UPDATED_REPO_URL=$(echo "$REPO_JSON" | jq -r '.[0].html_url')
+
+          # Atualiza o bloco no README
+          sed -i '/<!--last_repo-->/, /<!--\/last_repo-->/c\
+          <!--last_repo-->\n['"$LAST_UPDATED_REPO_NAME"']('"$LAST_UPDATED_REPO_URL"')\n<!--/last_repo-->' README.md
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update README with latest repo"
+            git push
+          fi
